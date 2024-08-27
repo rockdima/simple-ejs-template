@@ -3,7 +3,7 @@
 Run
 
 ```bash
-npm init
+npm install
 ```
 
 ```bash
