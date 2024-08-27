@@ -3,7 +3,7 @@ import path from 'path';
 const app = express();
 
 import {router as generalRouter} from './routes/general.js';
-import {router1 as productsRouter} from './routes/products.js';
+import {router as productsRouter} from './routes/products.js';
 
 // set the static path
 app.use(express.static(path.join(import.meta.dirname, 'public')));

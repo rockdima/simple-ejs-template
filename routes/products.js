@@ -1,7 +1,7 @@
 import express from 'express';
-const router1 = express.Router();
+const router = express.Router();
 
-router1.get("/", (req, res) => {
+router.get("/", (req, res) => {
     res.render('products/list', {
         title: 'Products list',
         msg: 'Products list',
@@ -14,7 +14,7 @@ router1.get("/", (req, res) => {
     })
 });
 
-router1.get('/:pid', (req, res) => {
+router.get('/:pid', (req, res) => {
     res.render('products/product', {
         title: 'Product',
         msg: 'Product #' + req.params.pid,
@@ -27,4 +27,4 @@ router1.get('/:pid', (req, res) => {
     })
 });
 
-export { router1 };
+export { router };
